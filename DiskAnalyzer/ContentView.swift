@@ -14,13 +14,16 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Button("Fetch") {
-                let output = try? fetcher.execute("df -k")
-                
-                print(output ?? "")
-            }
+            Text("fetched \(fetcher.diskInfos.count)")
         }
         .padding()
+        .task {
+            do {
+                fetcher.diskInfos = try await fetcher.getDiskInfo()
+            } catch {
+                fetcher.error = error
+            }
+        }
     }
 }
 
