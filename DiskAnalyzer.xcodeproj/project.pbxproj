@@ -19,6 +19,8 @@
 		AEA4E8F62DC69F730063899C /* FormattedDiskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E8F52DC69F730063899C /* FormattedDiskInfo.swift */; };
 		AEA4E8F92DC6AE6B0063899C /* DiskInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E8F82DC6AE6B0063899C /* DiskInfoRow.swift */; };
 		AEA4E8FB2DC6B06A0063899C /* DiskInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E8FA2DC6B06A0063899C /* DiskInfoListView.swift */; };
+		AEA4E8FD2DC6BB210063899C /* DiskInfoChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E8FC2DC6BB210063899C /* DiskInfoChart.swift */; };
+		AEA4E9062DC6C5BC0063899C /* DiskInfoDGChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E9052DC6C5BC0063899C /* DiskInfoDGChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		AEA4E8F52DC69F730063899C /* FormattedDiskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedDiskInfo.swift; sourceTree = "<group>"; };
 		AEA4E8F82DC6AE6B0063899C /* DiskInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskInfoRow.swift; sourceTree = "<group>"; };
 		AEA4E8FA2DC6B06A0063899C /* DiskInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskInfoListView.swift; sourceTree = "<group>"; };
+		AEA4E8FC2DC6BB210063899C /* DiskInfoChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskInfoChart.swift; sourceTree = "<group>"; };
+		AEA4E9052DC6C5BC0063899C /* DiskInfoDGChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskInfoDGChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				AEA4E8F82DC6AE6B0063899C /* DiskInfoRow.swift */,
+				AEA4E9052DC6C5BC0063899C /* DiskInfoDGChart.swift */,
 				AEA4E8FA2DC6B06A0063899C /* DiskInfoListView.swift */,
+				AEA4E8FC2DC6BB210063899C /* DiskInfoChart.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 			dependencies = (
 			);
 			name = DiskAnalyzer;
+			packageProductDependencies = (
+			);
 			productName = DiskAnalyzer;
 			productReference = AE8817212DC1899D00DD0C1F /* DiskAnalyzer.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +264,8 @@
 				Base,
 			);
 			mainGroup = AE8817182DC1899D00DD0C1F;
+			packageReferences = (
+			);
 			productRefGroup = AE8817222DC1899D00DD0C1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,10 +311,12 @@
 				AEA4E8F42DC67FBA0063899C /* DiskInfo.swift in Sources */,
 				AE8817542DC18B4A00DD0C1F /* DiskInfoFetcher.swift in Sources */,
 				AEA4E8F62DC69F730063899C /* FormattedDiskInfo.swift in Sources */,
+				AEA4E9062DC6C5BC0063899C /* DiskInfoDGChart.swift in Sources */,
 				AEA4E8FB2DC6B06A0063899C /* DiskInfoListView.swift in Sources */,
 				AE8817272DC1899D00DD0C1F /* ContentView.swift in Sources */,
 				AE8817252DC1899D00DD0C1F /* DiskAnalyzerApp.swift in Sources */,
 				AEA4E8F92DC6AE6B0063899C /* DiskInfoRow.swift in Sources */,
+				AEA4E8FD2DC6BB210063899C /* DiskInfoChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

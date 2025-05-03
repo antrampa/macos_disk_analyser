@@ -32,4 +32,18 @@ struct FormattedDiskInfo: Identifiable {
                           totalSize: 910 * 1024 * 1024)
     }
     
+    static var examples: [FormattedDiskInfo] {
+        [
+        FormattedDiskInfo(title: "System",
+                          size: 11 * 1024 * 1024,
+                          totalSize: 910 * 1024 * 1024),
+        FormattedDiskInfo(title: "Available",
+                          size: 300 * 1024 * 1024,
+                          totalSize: 910 * 1024 * 1024),
+        FormattedDiskInfo(title: "User Data",
+                          size: 600 * 1024 * 1024,
+                          totalSize: 910 * 1024 * 1024)
+        ]
+    }
+    
 }

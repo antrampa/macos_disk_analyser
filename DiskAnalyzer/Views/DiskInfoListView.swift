@@ -25,7 +25,7 @@ struct DiskInfoListView: View {
 
 struct DiskInfoListView_Previews: PreviewProvider {
     static var previews: some View {
-        DiskInfoListView(diskInfos: [FormattedDiskInfo.example])
+        DiskInfoListView(diskInfos: FormattedDiskInfo.examples)
             .frame(width: 300, height: 300)
             
     }

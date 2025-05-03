@@ -13,11 +13,14 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 20) {
             Text("Disk Analyzer")
                 .font(.title2)
+                .bold()
             
             DiskInfoListView(diskInfos: fetcher.diskInfos)
+            
+            DiskInfoChart(diskInfos: fetcher.diskInfos)
         }
         .padding()
         .task {
