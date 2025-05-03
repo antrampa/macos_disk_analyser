@@ -12,8 +12,13 @@ struct DiskInfoListView: View {
     var diskInfos: [FormattedDiskInfo]
     
     var body: some View {
-        List(diskInfos) { info in
-            DiskInfoRow(info: info)
+        GroupBox {
+            ForEach(diskInfos) { info in
+                DiskInfoRow(info: info)
+            }
+            .listRowSeparator(.hidden)
+        } label: {
+            Text("Disk Space Overview")
         }
     }
 }
@@ -21,6 +26,7 @@ struct DiskInfoListView: View {
 struct DiskInfoListView_Previews: PreviewProvider {
     static var previews: some View {
         DiskInfoListView(diskInfos: [FormattedDiskInfo.example])
+            .frame(width: 300, height: 300)
             
     }
 }
