@@ -21,7 +21,7 @@ class DiskInfoFetcher: ObservableObject {
     
     func getDiskInfo() async throws -> [FormattedDiskInfo] {
         try await Task.detached(priority: .userInitiated) {
-            let output = try self.execute("df -k")
+            let output = try self.execute("df -k -P")
             let infos = try self.parse(output)
             let formattedDiskInfos = self.parse(infos)
             return formattedDiskInfos

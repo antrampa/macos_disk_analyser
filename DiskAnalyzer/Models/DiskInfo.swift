@@ -17,11 +17,11 @@ struct DiskInfo {
     let mountPoint: String
     
     var isSystemVolume: Bool {
-        fileSystemName == "/"
+        mountPoint == "/"
     }
     
     var isDataVolume: Bool {
-        fileSystemName == "/System/Volumes/Data"
+        mountPoint == "/System/Volumes/Data"
     }
 }
 
