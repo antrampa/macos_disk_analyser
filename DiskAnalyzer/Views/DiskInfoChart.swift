@@ -42,6 +42,7 @@ struct DiskInfoChart: View {
                 )*/
         }
         .chartLegend(position: .trailing, alignment: .center)
+        .frame(height: 150)
     }
 }
 
