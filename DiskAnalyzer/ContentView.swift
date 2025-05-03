@@ -13,8 +13,11 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack {
-            Text("fetched \(fetcher.diskInfos.count)")
+        VStack(alignment: .leading) {
+            Text("Disk Analyzer")
+                .font(.title2)
+            
+            DiskInfoListView(diskInfos: fetcher.diskInfos)
         }
         .padding()
         .task {
@@ -30,5 +33,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .frame(width: 300, height: 600)
     }
 }

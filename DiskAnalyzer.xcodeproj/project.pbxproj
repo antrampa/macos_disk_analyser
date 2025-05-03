@@ -17,6 +17,8 @@
 		AE8817542DC18B4A00DD0C1F /* DiskInfoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8817532DC18B4A00DD0C1F /* DiskInfoFetcher.swift */; };
 		AEA4E8F42DC67FBA0063899C /* DiskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E8F32DC67FBA0063899C /* DiskInfo.swift */; };
 		AEA4E8F62DC69F730063899C /* FormattedDiskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E8F52DC69F730063899C /* FormattedDiskInfo.swift */; };
+		AEA4E8F92DC6AE6B0063899C /* DiskInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E8F82DC6AE6B0063899C /* DiskInfoRow.swift */; };
+		AEA4E8FB2DC6B06A0063899C /* DiskInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4E8FA2DC6B06A0063899C /* DiskInfoListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		AE8817532DC18B4A00DD0C1F /* DiskInfoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiskInfoFetcher.swift; path = DiskAnalyzer/DiskInfoFetcher.swift; sourceTree = SOURCE_ROOT; };
 		AEA4E8F32DC67FBA0063899C /* DiskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskInfo.swift; sourceTree = "<group>"; };
 		AEA4E8F52DC69F730063899C /* FormattedDiskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedDiskInfo.swift; sourceTree = "<group>"; };
+		AEA4E8F82DC6AE6B0063899C /* DiskInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskInfoRow.swift; sourceTree = "<group>"; };
+		AEA4E8FA2DC6B06A0063899C /* DiskInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskInfoListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		AE8817232DC1899D00DD0C1F /* DiskAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				AEA4E8F72DC6AE250063899C /* Views */,
 				AE8817502DC18ABD00DD0C1F /* View Models */,
 				AE88174F2DC18AA100DD0C1F /* Models */,
 				AE8817242DC1899D00DD0C1F /* DiskAnalyzerApp.swift */,
@@ -152,6 +157,15 @@
 				AE8817532DC18B4A00DD0C1F /* DiskInfoFetcher.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		AEA4E8F72DC6AE250063899C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEA4E8F82DC6AE6B0063899C /* DiskInfoRow.swift */,
+				AEA4E8FA2DC6B06A0063899C /* DiskInfoListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +301,10 @@
 				AEA4E8F42DC67FBA0063899C /* DiskInfo.swift in Sources */,
 				AE8817542DC18B4A00DD0C1F /* DiskInfoFetcher.swift in Sources */,
 				AEA4E8F62DC69F730063899C /* FormattedDiskInfo.swift in Sources */,
+				AEA4E8FB2DC6B06A0063899C /* DiskInfoListView.swift in Sources */,
 				AE8817272DC1899D00DD0C1F /* ContentView.swift in Sources */,
 				AE8817252DC1899D00DD0C1F /* DiskAnalyzerApp.swift in Sources */,
+				AEA4E8F92DC6AE6B0063899C /* DiskInfoRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
